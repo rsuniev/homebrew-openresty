@@ -69,7 +69,7 @@ class NgxOpenresty < Formula
 
     args << "--with-http_postgres_module" if build.with? 'postgresql'
     args << "--with-http_iconv_module" if build.with? 'iconv'
-    args << "--with-zlib=/opt/zlib-1.2.8" if build.with? 'zlib'    
+    args << "--with-zlib=/opt/zlib-1.2.8" #if build.with? 'zlib'    
     
 
     system "./configure", *args
