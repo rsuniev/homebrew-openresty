@@ -25,6 +25,10 @@ To enable PostgreSQL support:
 
     $ brew install ngx_openresty --with-postgresql
 
+To enable ZipLib(http://zlib.net/) support:
+
+    $ brew install ngx_openresty --with-ziplib (Note that you'll need to have a local folder with: /opt/zlib-1.2.8)
+
 For a list of all options available, have a look at:
 
     $ brew info ngx_openresty
