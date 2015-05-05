@@ -23,6 +23,8 @@ class NgxOpenresty < Formula
   option 'with-iconv', "Compile with support for converting character encodings"
 
   option 'with-debug', "Compile with support for debug logging but without proper gdb debugging symbols"
+  option 'with-zlib', "Compile with support for zip"
+
 
   # nginx options
   option 'with-webdav', "Compile with ngx_http_dav_module"
@@ -67,6 +69,8 @@ class NgxOpenresty < Formula
 
     args << "--with-http_postgres_module" if build.with? 'postgresql'
     args << "--with-http_iconv_module" if build.with? 'iconv'
+    args << "--with-zlib=/opt/zlib-1.2.8" if build.with? 'zlib'    
+    
 
     system "./configure", *args
 
