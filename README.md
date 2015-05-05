@@ -16,7 +16,7 @@ Tap for Homebrew that adds a formula for [OpenResty](http://openresty.org/).
 
 ## Install
 
-    $ brew tap killercup/homebrew-openresty
+    $ brew tap rsuniev/homebrew-openresty
     $ brew install ngx_openresty
 
 ## Optional Arguments
